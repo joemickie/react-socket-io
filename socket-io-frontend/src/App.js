@@ -23,8 +23,8 @@ ChartJS.register(
   Legend,
 )
 
-const socket = io("http://localhost:4000");
-// const socket = io("https://client-server-single-app-backend.onrender.com")
+// const socket = io("http://localhost:4000");
+const socket = io("https://react-socket-io-backend.onrender.com");
 
 function App() {
   return (
