@@ -18,6 +18,11 @@ const io = socketIo(server, {
 let lastPrice = Math.random() * 100 + 50; // Random starting price between $50 and $150
 let day = 0;
 
+// Route handler for the root path
+app.get('/', (req, res) => {
+    res.send('Welcome to the stock market API!');
+});
+
 io.on('connection', (socket) => {
 
     const interval = setInterval(() => {
